@@ -83,4 +83,15 @@ body{
 main{
   background: url("../img/bg.jpg") center no-repeat #000;
   background-size: cover;
+  min-width: 960px;
+}
+.logo-box{
+  height: 232px;
+  padding-top: 28px;
+}
+.logo{
+  margin: 0 auto;
+  display: block;
+  width: 368px;
+  height: 204px;
 }
