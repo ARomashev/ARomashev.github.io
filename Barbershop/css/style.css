@@ -8,6 +8,9 @@ a{
   color: #fff;
   outline: none;
 }
+p{
+  margin:  0px;
+}
 body{
   font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -85,7 +88,7 @@ main{
   background-size: cover;
   min-width: 960px;
 }
-.logo-box{
+.logo-wrap{
   height: 232px;
   padding-top: 28px;
 }
@@ -94,4 +97,57 @@ main{
   display: block;
   width: 368px;
   height: 204px;
+}
+.feature-box{
+  text-align: center;
+  width: 300px;
+  height: 284px;
+  margin-right: 20px;
+  float: left;
+  color: #fff;
+}
+.feature-box:last-child{
+  margin-right: 0px;
+}
+.feature-title{
+  display: inline-block;
+  font-weight: bold;
+  padding-top: 35px;
+  margin-bottom: 86px;
+}
+.feature-box{
+  background: url("../img/feature_ico.png") no-repeat 50% 100px;
+}
+.feature-box .feature-title{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.feature-box .feature-disc{
+  font-size: 14px;
+  font-weight: bold;
+}
+.content-wrap{
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.content-wrap .container{
+  background: url("../img/content_line.png") no-repeat center,
+  url("../img/content_bg.jpg");
+}
+.left-box,.right-box{
+   height: 270px;
+   width: 300px;
+   padding: 80px;
+}
+.left-box{
+ float: left;
+}
+.right-box{
+  float: right;
+}
+.content-subheader{
+  font-size: 30px;
 }
