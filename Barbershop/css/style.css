@@ -8,11 +8,13 @@ a{
   color: #fff;
   outline: none;
 }
-p{
+p,h2{
   margin:  0px;
 }
 body{
   font-family: 'PT Sans Narrow', sans-serif;
+  background: url("../img/bg.jpg") center no-repeat #000;
+  background-size: cover;
 }
 .clearfix::after{
   content: " ";
@@ -30,8 +32,8 @@ body{
 }
 .container{
   width: 940px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left:  10px;
+  margin-right: 10px;
   margin: 0 auto;
 }
 .main-nav{
@@ -83,9 +85,8 @@ body{
 .user-box .login-link:hover::before{
   opacity: 1;
 }
-main{
-  background: url("../img/bg.jpg") center no-repeat #000;
-  background-size: cover;
+.main-content{
+  margin-bottom: 64px;
   min-width: 960px;
 }
 .logo-wrap{
@@ -127,27 +128,182 @@ main{
   font-weight: bold;
 }
 .content-wrap{
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   text-align: left;
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
 }
+
 .content-wrap .container{
   background: url("../img/content_line.png") no-repeat center,
   url("../img/content_bg.jpg");
 }
-.left-box,.right-box{
-   height: 270px;
-   width: 300px;
-   padding: 80px;
+.box-wraper{
+    padding-bottom: 55px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
 }
 .left-box{
  float: left;
+ padding-right: 50px;
+ width: 340px;
 }
 .right-box{
   float: right;
+  padding-left: 90px;
+  width: 300px;
 }
 .content-subheader{
   font-size: 30px;
+  margin-bottom: 40px;
+}
+.news-disc{
+  margin-bottom: 9px;
+  line-height: 23px;
+}
+.pubished-time{
+  margin-bottom: 25px;
+  display: block;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+.small-btn{
+  width: 140px;
+}
+.large-btn{
+  width: 100%
+}
+.btn-black{
+  outline: none;
+  min-height: 45px;
+  font-size: 14px;
+  line-height: 45px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  background-color: #000;
+  border: none;
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-black:hover{
+  background-color: #663d15;
+}
+.pin-left{
+  float: left;
+}
+.pin-right{
+  float: right;
+}
+.slide img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+.slide .current-slide{
+  z-index: 1;
+}
+.slide{
+  position: relative;
+  width: 286px;
+  height: 164px;
+  background-color: #e5e5e5;
+  border: 7px solid #fff;
+  margin-bottom: 37px;
+}
+.contact-info-box{
+  margin-bottom: 37px;
+  line-height: 23px;
+}
+input[type='text']{
+  width: 121px;
+  height: 39px;
+  border: 2px solid #000;
+  margin-bottom: 19px;
+  color: #000;
+  text-transform: uppercase;
+  padding-left: 15px;
+  outline: none;
+}
+::-webkit-input-placeholder {color:#000;}
+::-moz-placeholder          {color:#000;}/* Firefox 19+ */
+:-moz-placeholder           {color:#000;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#000;}
+.input-wrap{
+  margin-bottom:15px;
+}
+.inform-button-wrap{
+  margin-top: 54px;
+}
+.footer{
+  height: 130px;
+  background: url("../img/footer_bg.jpg");
+  min-width: 960px;
+  color: #fff;
+  padding-top: 60px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.footer-box{
+  width: 310px;
+  margin-right: 5px;
+  float: left;
+  line-height: 22px;
+}
+.footer-box:last-child{
+  margin-right: 0;
+}
+.social-wrap{
+  text-align: center;
+  width: 141px;
+  margin: 0 auto;
+}
+.social-list,.social-wrap .large-btn{
+  margin-top: 20px;
+}
+.social-item{
+  display: block;
+  width: 43px;
+  height: 43px;
+  float: left;
+  margin-right: 6px;
+}
+.social-item:last-child{
+  margin-right: 0px;
+}
+.social-item a{
+  display: block;
+  width: 43px;
+  height: 43px;
+  text-indent: -9999px;
+}
+.vk-item{
+  background: url("../img/vk_ico.png") no-repeat center #000;
+}
+.f-item{
+  background: url("../img/f_ico.png") no-repeat center #000;
+}
+.inst-item{
+  background: url("../img/t_ico.png") no-repeat center #000;
+}
+.vk-item:hover{
+  background: url("../img/vk_ico_active.png") no-repeat center #fff;
+}
+.f-item:hover{
+  background: url("../img/f_ico_active.png") no-repeat center #fff;
+}
+.inst-item:hover{
+  background: url("../img/t_ico_active.png") no-repeat center #fff;
+}
+.social-wrap .btn-black:hover{
+  color: #000;
+  background-color: #fff;
 }

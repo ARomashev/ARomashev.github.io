@@ -5,7 +5,8 @@
     <title>Barbershop</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic-ext,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="main-header">
@@ -25,13 +26,12 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="main-content">
       <div class="logo-wrap">
         <div class="container">
           <img class="logo" src="img/logo.png" width="368" height="204" class="logo">
         </div>
       </div>
-
         <div class="container clearfix">
             <div class="feature-box">
               <strong class="feature-title">Быстро</strong>
@@ -47,30 +47,102 @@
             </div>
         </div>
         <section class="content-wrap">
-          <div class="container clearfix">
-            <div class="left-box">
-              <h2 class="content-subheader">Новости</h2>
-              <p class="content-disc">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-              <time class="pubished-time">25 сентября</time>
-              <h2 class="content-subheader">Новости</h2>
-              <p class="content-disc">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</pclass>
-              <time class="pubished-time">19 сентября</time>
-            </div>
-            <div class="right-box">
+          <div class="container ">
+            <div class="box-wraper clearfix">
+              <div class="left-box">
+                <h2 class="content-subheader">Новости</h2>
+                <ul class="news-list">
+                  <li class="news-disc">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+                    <time class="pubished-time">25 сентября</time>
+                  </li>
+                  <li class="news-disc">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+                    <time class="pubished-time">19 сентября</time>
+                  </li>
+                </ul>
+                <a href="#" class="btn-black small-btn" title="Все новости">Все новости</a>
+              </div>
+              <div class="right-box">
+                <h2 class="content-subheader">Фото галерея</h2>
+                <div class="slider">
+                  <div class="slide">
+                      <img src="img/slide1.jpg" class="current-slide" width="286" height="164" alt="Фото зала1"/>
+                      <img src="img/slide1.jpg" width="286" height="164" alt="Фото зала2"/>
+                      <img src="img/slide1.jpg" width="286" height="164" alt="Фото зала3"/>
+                      <img src="img/slide1.jpg" width="286" height="164" alt="Фото зала4"/>
+                  </div>
 
+                    <button class="btn-black pin-left small-btn">Назад</button>
+                    <button class="btn-black pin-right small-btn">Вперед</button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <section class="content-wrap">
-          <div class="container clearfix">
-            <div class="left-box">
+          <div class="container ">
+            <div class="box-wraper clearfix">
+              <div class="left-box">
+                <h2 class="content-subheader">Контактная информация</h2>
+                <p class="contact-info-box">
+                  БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                  АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+                  ТЕЛЕФОН: +7 (495) 666-02-66
+                </p>
+                <p class="contact-info-box">
+                  ВРЕМЯ РАБОТЫ:<br>
+                  ПН — ПТ: С 10:00 ДО 22:00<br>
+                  СБ — ВС: С 10:00 ДО 19:00
+                </p>
+                <div class="clearfix inform-button-wrap">
+                  <button class="btn-black pin-left small-btn">Как проехать</button>
+                  <button class="btn-black pin-right small-btn">Обратная связь</button>
+                </div>
 
-            </div>
-            <div class="right-box">
-
+              </div>
+              <div class="right-box">
+                <h2 class="content-subheader">Записаться</h2>
+                <p class="contact-info-box">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+                <form  name="feedback" action="#" method="post">
+                  <div class="input-wrap clearfix">
+                    <input class="pin-left" type="text" name="date" placeholder="Дата">
+                    <input class="pin-right" type="text" name="time" placeholder="Время">
+                    <input class="pin-left" type="text" name="name" placeholder="Ваше имя">
+                    <input class="pin-right" type="text" name="phone" placeholder="Телефон">
+                  </div>
+                  <button class="btn-black large-btn" type="submit">Отправить</button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container clearfix">
+          <div class="footer-box">
+            <p>
+              БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+              АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+              КАК НАС НАЙТИ?<br>
+              ТЕЛЕФОН: +7 (495) 666-02-66
+            </p>
+          </div>
+          <div class="footer-box">
+            <div class="social-wrap">
+                <p>Давайте дружить</p>
+                <ul class="social-list">
+                  <li class="social-item vk-item"><a href="#" title="domain.com">domain.com</a></li>
+                  <li class="social-item f-item"><a href="#" title="domain.com">domain.com</a></li>
+                  <li class="social-item inst-item"><a href="#" title="domain.com">domain.com</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="footer-box">
+            <div class="social-wrap">
+                <p>Разработано</p>
+                <a href="#" class="large-btn btn-black" title="htmlacademy.ru">htmlacademy.ru</a>
+            </div>
+          </div>
+        </div>
+    </footer>
   </body>
 </html>
