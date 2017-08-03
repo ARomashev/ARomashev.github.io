@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
 <!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
@@ -11,13 +11,15 @@
 	<meta name="description" content="" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="libs/slick/slick.min.js"></script>
-	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="libs/bootstrap-grid-3.3.1.min.css" />
-  <link rel="stylesheet" href="libs/normalize/normalize.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+  <script type="text/javascript" src="libs/swipe/swipe.min.js"></script>
 
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="libs/normalize/normalize.css">
+  <link rel="stylesheet" href="libs/swipe/swiper.css">
 
   <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
@@ -29,7 +31,8 @@
 </head>
 <body>
 	<header class="main_header">
-			<div class="header_tagline">
+			<div class="header_tagline clearfix">
+
 					<img src="img/logo.png" alt="companyName" class="logo">
 					<h1 class="tagline_header"><span class="medium_font">Моск</span>Строй</h1>
 					<p class="taline_sub_header"><span class="blue_text_color">Качество</span><span class="crimson_text_color"> - это залог нашего успеха!</span></p>
@@ -39,12 +42,12 @@
 				<div class="header_bar color_yellow"></div>
 				<div class="header_bar color_blue"></div>
 				<div class="header_bar color_red"></div>
-			<div>
+			</div>
 	</header>
 
-	<nav class="main-nav container" id="menu">
-		<ul class="nav_list clearfix">
-			<li class="nav_list_item"><a href="#">Отправить заявку</a></li>
+	<nav class="main_nav ">
+		<ul class="nav_list   clearfix" id="menu"  >
+			<li class="nav_list_item" ><a href="#">Отправить заявку</a></li>
 			<li class="nav_list_item"><a href="#">Отзывы</a></li>
 			<li class="nav_list_item"><a href="#">Прайс</a></li>
 			<li class="nav_list_item"><a href="#">О нас</a></li>
@@ -82,11 +85,15 @@
 					</p>
 				</div>
 			</div>
-		</section>
-		<section class="someclass">
 
 		</section>
 
+		<div class="header_bars  clearfix">
+			<div class="header_bar color_pinc"></div>
+			<div class="header_bar color_yellow"></div>
+			<div class="header_bar color_blue"></div>
+			<div class="header_bar color_red"></div>
+		</div>
 
 		<section class="price_section">
 			<h2 class="section_header">Самые   низкие<span class="red_text_color"> цены у нас</span></h2>
@@ -114,6 +121,7 @@
 					<div class="item_desc_underline"></div>
 					<p class="slider_item_desc">Подряда на строительство</p>
 					<div class="item_desc_underline"></div>
+
 					<p class="slider_item_desc">Реконструкцию зданий</p>
 					<a href="#" title="sometitle" class="slider_item_button">Заказать</a>
 				</div>
@@ -163,6 +171,145 @@
 				</div>
 		</div>
 		</section>
+		<section class="projects">
+
+			<!-- Swiper -->
+	<div class="swiper-container clearfix">
+			<div class="swiper-wrapper clearfix">
+					<div class="swiper-slide clearfix">
+						<div class="left_box black_slider_box">
+							<div class="slider_box_wrapper">
+								<h2 class="sub_section_header"><span class="white_text_color">Узнайте </span> <span class="blue_text_color"> о наших проектах </span></h2>
+								<h3 class="slider_tagline">Какой-то слоган</h3>
+								<p class="swiper_content_desc">
+									Сегодня «Каупер» — это динамично развивающаяся максимально интегрированная команда единомышленников, внедряющая инновационные
+									программы и технологии во все строительные процессы, которые обеспечат максимальную производительность на протяжении всего жизненного
+									цикла проекта. Мы собрали коллектив специалистов высшей категории, который сможет воплотить в реальность архитектурные решения любой
+									 сложности, профессионально управлять всем проектом, от разработки и согласования технической документации, до введения объекта в
+									 эксплуатацию. Весь инженерно-технический состав компании, имеет большой опыт и высокую квалификацию в сфере инженерии и
+									 строительно-монтажных работ, благодаря чему наша строительная компания
+								</p>
+							</div>
+						</div>
+						<div class="right_box opacity_box">
+
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="left_box black_slider_box">
+							<div class="slider_box_wrapper">
+								<h2 class="sub_section_header"><span class="white_text_color">Узнайте </span> <span class="blue_text_color"> о наших проектах </span></h2>
+								<h3 class="slider_tagline">Какой-то слоган</h3>
+								<p class="swiper_content_desc">
+									Сегодня «Каупер» — это динамично развивающаяся максимально интегрированная команда единомышленников, внедряющая инновационные
+									программы и технологии во все строительные процессы, которые обеспечат максимальную производительность на протяжении всего жизненного
+									цикла проекта. Мы собрали коллектив специалистов высшей категории, который сможет воплотить в реальность архитектурные решения любой
+									 сложности, профессионально управлять всем проектом, от разработки и согласования технической документации, до введения объекта в
+									 эксплуатацию. Весь инженерно-технический состав компании, имеет большой опыт и высокую квалификацию в сфере инженерии и
+									 строительно-монтажных работ, благодаря чему наша строительная компания
+								</p>
+							</div>
+						</div>
+						<div class="right_box opacity_box">
+
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="left_box black_slider_box">
+							<div class="slider_box_wrapper">
+								<h2 class="sub_section_header"><span class="white_text_color">Узнайте </span> <span class="blue_text_color"> о наших проектах </span></h2>
+								<h3 class="slider_tagline">Какой-то слоган</h3>
+								<p class="swiper_content_desc">
+									Сегодня «Каупер» — это динамично развивающаяся максимально интегрированная команда единомышленников, внедряющая инновационные
+									программы и технологии во все строительные процессы, которые обеспечат максимальную производительность на протяжении всего жизненного
+									цикла проекта. Мы собрали коллектив специалистов высшей категории, который сможет воплотить в реальность архитектурные решения любой
+									 сложности, профессионально управлять всем проектом, от разработки и согласования технической документации, до введения объекта в
+									 эксплуатацию. Весь инженерно-технический состав компании, имеет большой опыт и высокую квалификацию в сфере инженерии и
+									 строительно-монтажных работ, благодаря чему наша строительная компания
+								</p>
+							</div>
+						</div>
+						<div class="right_box opacity_box">
+
+						</div>
+					</div>
+
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+	</div>
+</section>
+
+<section class="contact_inform clearfix">
+	<div class="left_box black_slider_box">
+		<div class="slider_box_wrapper">
+			<h2 class="sub_section_header"><span class="white_text_color">Контактная  </span> <span class="blue_text_color">информация</span></h2>
+
+			<p class="swiper_content_desc">ООО «Строительная компания Каупер»
+бульвар Верховного совета, 34, Киев 02094, Украина
+			</p>
+				<p class="swiper_content_desc"><span class="blue_text_color">Телефоны </span> </p>
+				<p class="swiper_content_desc contact_line">+380 (44) 111-22-33 (многоканальный)</p>
+				<p class="swiper_content_desc contact_line">+380 (67) 234-23-13</p>
+				<p class="swiper_content_desc"><span class="blue_text_color">Электронная почта </span> </p>
+				<p class="swiper_content_desc contact_line">simple_mail@gmail.com — управление проектами</p>
+				<p class="swiper_content_desc contact_line">simple_mail@gmail.com — бухгалтерия</p>
+				<p class="swiper_content_desc contact_line">simple_mail@gmail.com — производственно-технический отдел</p>
+				<p class="swiper_content_desc contact_line">simple_mail@gmail.com — для подрядчиков</p>
+				<p class="swiper_content_desc contact_line">simple_mail@gmail.com — для поставщиков</p>
+		</div>
+	</div>
+	<div class="right_box opacity_box">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.1715581378558!2d37.62600861582627!3d55.7381481005898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b1ccad4e033%3A0x399d0644857afff7!2z0YPQuy4g0J_Rj9GC0L3QuNGG0LrQsNGPLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1501743972407" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+</section>
+
+
+
+
+<section class="feedback_section">
+	<h2 class="section_header">Свяжитесь <span class="red_text_color"> с нами</span></h2>
+	<p class="section_central_content">
+		Наша компания предоставляет услуги генерального подряда на строительство, ремонт и реконструкцию зданий и
+		помещений коммерческого назначения: торговые, развлекательные и офисные центры, заводы.
+	</p>
+	<form action="#" class="feedback_form " method = "POST">
+		<div class="form_line clearfix">
+  		<input type="text" placeholder="Ваше имя">
+			<input type="text" placeholder="Email">
+		</div>
+		<div class="form_line clearfix">
+			<input type="text" placeholder="Номер телефона">
+			<input type="text" placeholder="Тема">
+		</div>
+		<textarea class="feedback_form_text" name="">Сообщение....</textarea>
+		<button type="submit" class="feedback_form_submit">Оставить заявку</button>
+
+	</form>
+</section>
+
+<footer class="main_footer">
+	<div class="main_footer_wrap container clearfix">
+		<p class="footer_comp_name"><span class="medium_font">Моск</span>Строй</p>
+		<p class="footer_rights_reserved">
+			© 2017 compName. <span class="blue_text_color"> All rights reserved. </span>Developed by <a href="#" title="developer"><span class="red_text_color">Alexey Romashev.</span></a>
+		</p>
+	</div>
+</footer>
+
+
+	<!-- Swiper JS -->
+	<script src="libs/swipe/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+	var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true
+	});
+	</script>
+
+		</section>
 	</main>
 	<script>
 	$(document).ready(function(){
@@ -170,9 +317,12 @@
 		infinite: true,
 		dots: true,
 		slidesToShow: 3,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		autoplay:true
 	});
 });
+
+
 /*$(document).ready(function(){
 	var $findingElements = $('.price_section .slider').find('div [aria-hidden = false]');
 	$($findingElements[1]).addClass("central_slide");
