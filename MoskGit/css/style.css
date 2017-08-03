@@ -194,6 +194,10 @@ body{
   color: #000;
   text-transform: uppercase;
 }
+.contact_inform{
+  margin-top: 130px;
+
+}
 .footer_rights_reserved{
   font-size: 15px;
   color: #fff;
