@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="css/media.css" />
 </head>
 <body>
-	<header class="main_header">
+	<header class="main_header" id="ev1">
 			<div class="header_tagline clearfix">
 					<img src="img/logo.png" alt="companyName" class="logo">
 					<h1 class="tagline_header"><span class="medium_font">Моск</span>Строй</h1>
@@ -48,17 +48,17 @@
 		<label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
 	<input type="checkbox" id="show-menu">
 		<ul class="nav_list   clearfix" id="menu"  >
-				<li class="nav_list_item"><a href="#">Главная</a></li>
-				<li class="nav_list_item"><a href="#">О нас</a></li>
-							<li class="nav_list_item"><a href="#">Прайс</a></li>
+				<li class="nav_list_item"><a href="#ev1">Главная</a></li>
+				<li class="nav_list_item"><a href="#ev2">О нас</a></li>
+							<li class="nav_list_item"><a href="#ev3">Прайс</a></li>
 
-			<li class="nav_list_item"><a href="#">Наши проекты</a></li>
-				<li class="nav_list_item" ><a href="#">Отправить заявку</a></li>
-				<li class="nav_list_item" ><a href="#">Контакты</a></li>
+			<li class="nav_list_item"><a href="#ev4">Наши проекты</a></li>
+				<li class="nav_list_item" ><a href="#ev5">Отправить заявку</a></li>
+				<li class="nav_list_item" ><a href="#ev6">Контакты</a></li>
 		</ul>
 	</nav>
 	<main class="main_content">
-		<section class="about_section">
+		<section class="about_section" id="ev2">
 			<h2 class="section_header">Немного <span class="red_text_color"> информации о нас</span></h2>
 			<p class="section_central_content">
 				Наша компания предоставляет услуги генерального подряда на строительство, ремонт и реконструкцию зданий и
@@ -98,7 +98,7 @@
 			<div class="header_bar color_red"></div>
 		</div>
 
-		<section class="price_section">
+		<section class="price_section" id="ev3">
 			<h2 class="section_header">Самые   низкие<span class="red_text_color"> цены у нас</span></h2>
 			<p class="section_central_content">
 				Наша компания предоставляет услуги генерального подряда на строительство, ремонт и реконструкцию зданий.
@@ -174,7 +174,7 @@
 				</div>
 		</div>
 		</section>
-		<section class="projects">
+		<section class="projects" id="ev4">
 
 			<!-- Swiper -->
 	<div class="swiper-container clearfix">
@@ -248,7 +248,7 @@
 
 
 
-<section class="feedback_section">
+<section class="feedback_section" id="ev5">
 	<h2 class="section_header">Свяжитесь <span class="red_text_color"> с нами</span></h2>
 	<p class="section_central_content">
 		Наша компания предоставляет услуги генерального подряда на строительство, ремонт и реконструкцию зданий и
@@ -268,7 +268,7 @@
 
 	</form>
 </section>
-<section class="contact_inform clearfix">
+<section class="contact_inform clearfix" id="ev6">
 	<div class="left_box black_slider_box">
 		<div class="slider_box_wrapper">
 			<h2 class="sub_section_header"><span class="white_text_color">Контактная  </span> <span class="blue_text_color">информация</span></h2>
@@ -369,6 +369,24 @@ function init(){
 });
 
 */
+
+$(document).ready(function(){
+ $("#menu").on("click","a", function (event) {
+
+	 event.preventDefault();
+
+
+	 var id  = $(this).attr('href'),
+
+
+		 top = $(id).offset().top;
+
+
+	 $('body,html').animate({scrollTop: top}, 1500);
+ });
+});
+
+
 
 
 $(document).ready(function() {
