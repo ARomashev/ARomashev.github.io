@@ -501,7 +501,9 @@ z-index: inherit;
 .central_slide{
   height: 450px;
 }
-
+.contact_inform .left_box{
+  height: 460px;
+}
 .blue_text_color{
   color: #5e608a;
 }
